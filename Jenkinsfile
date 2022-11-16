@@ -6,6 +6,12 @@ pipeline {
 				git 'https://github.com/Da1k0nBacon/JenkinsDependencyCheckTest'
 			}
 		}
+        
+        stage('test') {
+			steps {
+				echo 'Hellow world!'
+			}
+		}
 
 		stage('OWASP DependencyCheck') {
 			steps {
